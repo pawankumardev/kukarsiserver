@@ -1,0 +1,37 @@
+<ROOT>
+   <CONFIG>
+      <IP_NUMBER>192.168.100.111</IP_NUMBER>   <!-- IP-number of the external socket -->
+      <PORT>9508</PORT>                   <!-- Port-number of the external socket -->      
+      <SENTYPE>ImFree</SENTYPE>        <!-- The name of your system send in <Sen Type="" > -->     
+      <ONLYSEND>FALSE</ONLYSEND>       <!-- TRUE means the client don't expect answers. Do not send anything to robot -->
+   </CONFIG>
+   <!-- RSI Data: TYPE=  "BOOL", "STRING", "LONG", "DOUBLE" -->
+   <!-- INDX= "INTERNAL" switch on internal read values. Needed by DEF_... -->
+   <!-- INDX= "nmb" Input/Output index of RSI-Object / Maximum of RSI Channels: 64  -->   
+   <!-- HOLDON="1", set this output index of RSI Object to the last value  -->   
+   <!-- DEF_Delay count the late packages and send it back to server  -->
+   <!-- DEF_Tech: .T = advance .C = main run / .T1 advance set function generator 1 -->
+   
+   <SEND>
+      <ELEMENTS>
+         <ELEMENT TAG="A1" TYPE="DOUBLE" INDX="1" />
+         <ELEMENT TAG="A2" TYPE="DOUBLE" INDX="2" />
+         <ELEMENT TAG="A3" TYPE="DOUBLE" INDX="3" />
+         <ELEMENT TAG="A4" TYPE="DOUBLE" INDX="4" />
+         <ELEMENT TAG="A5" TYPE="DOUBLE" INDX="5" />
+         <ELEMENT TAG="A6" TYPE="DOUBLE" INDX="6" />
+      </ELEMENTS>
+   </SEND>
+   <RECEIVE>
+      <ELEMENTS>
+         <ELEMENT TAG="AxisCorr.A1" TYPE="DOUBLE" INDX="1" HOLDON="1" />
+         <ELEMENT TAG="AxisCorr.A2" TYPE="DOUBLE" INDX="2" HOLDON="1" />
+         <ELEMENT TAG="AxisCorr.A3" TYPE="DOUBLE" INDX="3" HOLDON="1" />
+         <ELEMENT TAG="AxisCorr.A4" TYPE="DOUBLE" INDX="4" HOLDON="1" />
+         <ELEMENT TAG="AxisCorr.A5" TYPE="DOUBLE" INDX="5" HOLDON="1" />
+         <ELEMENT TAG="AxisCorr.A6" TYPE="DOUBLE" INDX="6" HOLDON="1" />
+
+
+      </ELEMENTS>
+   </RECEIVE>
+</ROOT>
