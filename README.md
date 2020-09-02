@@ -3,7 +3,7 @@ Python Server For KUKA Robot Sensor Interface (RSI)
 
 KUKA Robot controller has inbuilt Ethernet port called KLI (KUKA LINE INTERFACE, Static IP) which is used for UDP/TCP IP connections from external system.
 
-Real Time Axis/Cartesian Position corrections (Delta) can be acheived via KUKA Optional Technology Package called RSI.(Remote Sensor Interface)
+Real Time Axis/Cartesian Position corrections (Delta) can be acheived via KUKA Optional Technology Package called RSI.(Robot Sensor Interface)
 
 Now, Here RSI installed on Controller will behave as UDP Client and External Computer/System should be Server.
 
