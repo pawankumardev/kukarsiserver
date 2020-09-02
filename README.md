@@ -15,6 +15,11 @@ Step 2: Copy all these (.RSI, .Diagram, .XML, Config.XML) files inside KUKA Cont
 
 Step 3: Start ServerApp.py on External Computer. (ServerApp.py Attached)
 
+Server GUI:
+
+![Test Image 1](http://pawankumarg.com/wp-content/uploads/2020/03/Capture.png)
+
+
 Step 4: Run RSI_Ethernet.src file on KUKA Controller. (This src is supplied by KUKA RSI — Example Folder)
 
 Step 5: Post Connection is established with Controller, Run GUI.py to Control Axis 1 to Axis 6 in Real Time.
