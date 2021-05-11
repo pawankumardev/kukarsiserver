@@ -7,7 +7,7 @@ import sys
 
 localIP     = "192.168.100.111" ## Address of your Computer -- Same must be entered in RSI Config File
 
-localPort   = 9508  ## Port on your computer
+localPort   = 9508  ## Port on your computer 
 
 bufferSize  = 1024 ## No need to change
 
@@ -28,7 +28,7 @@ UDPServerSocket.bind((localIP, localPort))
 
  
 
-print("UDP server up and listening for KUKA RSI !  - Set your Server Computer IP to 192.168.100.111 , Port : 9508 ")
+print("UDP server up and listening for KUKA RSI !  - Set your Server Computer IP to 192.168.100.111 , Port : 9508 ") #Intro on Console
 
  
 
